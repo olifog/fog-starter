@@ -69,8 +69,8 @@ importers:
         specifier: ^16.4.7
         version: 16.4.7
       drizzle-orm:
-        specifier: ^0.39.3
-        version: 0.39.3(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)
+        specifier: ^0.40.0
+        version: 0.40.0(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(gel@2.0.0)
       lucide-react:
         specifier: ^0.479.0
         version: 0.479.0(react@19.0.0)
@@ -1436,8 +1436,8 @@ packages:
     resolution: {integrity: sha512-l6dMSE100u7sDaTbLczibrQZjA35jLsHNqIV+jmhNVO3O8jzM6kywMOmV9uOz9ZVSCMPQhAZEFjL/qDPVrqpUA==}
     hasBin: true
 
-  drizzle-orm@0.39.3:
-    resolution: {integrity: sha512-EZ8ZpYvDIvKU9C56JYLOmUskazhad+uXZCTCRN4OnRMsL+xAJ05dv1eCpAG5xzhsm1hqiuC5kAZUCS924u2DTw==}
+  drizzle-orm@0.40.0:
+    resolution: {integrity: sha512-7ptk/HQiMSrEZHnAsSlBESXWj52VwgMmyTEfoNmpNN2ZXpcz13LwHfXTIghsAEud7Z5UJhDOp8U07ujcqme7wg==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -1458,6 +1458,7 @@ packages:
       better-sqlite3: '>=7'
       bun-types: '*'
       expo-sqlite: '>=14.0.0'
+      gel: '>=2'
       knex: '*'
       kysely: '*'
       mysql2: '>=2'
@@ -1504,6 +1505,8 @@ packages:
       bun-types:
         optional: true
       expo-sqlite:
+        optional: true
+      gel:
         optional: true
       knex:
         optional: true
@@ -2989,10 +2992,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.39.3(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6):
+  drizzle-orm@0.40.0(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(gel@2.0.0):
     optionalDependencies:
       '@neondatabase/serverless': 0.10.4
       '@types/pg': 8.11.6
+      gel: 2.0.0
 
   enhanced-resolve@5.18.1:
     dependencies:
